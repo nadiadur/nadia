@@ -1,30 +1,17 @@
-<html lang="en">
-    <head>
-        <title>Belajar Desain</title>
+<html>
+<body>
 
-    </head>
-    <body>
+<h2>What Can JavaScript Do?</h2>
 
-        <h1>Tutorial Desain</h1>
-        <div id="hasil-output-1"></div>
-        <hr>
-        <div id="hasil-output-2"></div>
+<p>JavaScript can change HTML attribute values.</p>
 
-        <script>
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
 
-            var hasil = document.getElementById("hasil-output-1");
-            hasil.innerHTML = "<p>Contoh menggunakan InnerHTML1</p>";
-            document.getElementById("hasil-output-2").innerHTML=
-            <h1>Hello Winners!</h1>
-            <div>Ini adalah tutorial desain, contoh menggunakan innerHTML. untuk tutorial lebih banyak silahkan lihat
-                <a href="https://polibang.ac.id" target="_blank"
-                rel="noopener noreferrer">disini</a>.
-                
-            </div>;
-        </script>
-        </hr>
-    </body>
-       
-       
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:200px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
 </html>
-
