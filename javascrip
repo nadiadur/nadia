@@ -1,17 +1,28 @@
-<html>
-<body>
+<html lang="en">
+    <head>
+    <title>Belajar Javascript</title>
+    </head>
+    <body>
+    <h1>Tutorial Javascript untuk Pemula</h1>
+    <div id="hasil-output-1"></div>
+    <hr>
+    <div id="hasil-output-2"></div>
+    <script>
+    // membuat objek elemen
+    var hasil = document.getElementById("hasil-output-1");
+    // menampilkan output ke elemen hasil
+    hasil.innerHTML = "<p>Contoh menggunakan InnerHTML    1</p>";
 
-<h2>What Can JavaScript Do?</h2>
-
-<p>JavaScript can change HTML attribute values.</p>
-
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
-
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-
-<img id="myImage" src="pic_bulboff.gif" style="width:200px">
-
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
-
-</body>
-</html>
+    //atau bisa juga langsung seperti ini
+    document.getElementById("hasil-output-2").innerHTML =
+    `<h1>Hello Winners!</h1>
+    <div>Ini adalah tutorial javascript dasar, contoh menggunakan
+    innerHTML. untuk tutorial lebih banyak silahkan lihat
+    <a href="https://polibang.ac.id" target="_blank"
+    rel="noopener noreferrer">disini</a>.
+    </div>`;
+    </script>
+    </body>
+    </html>
+  
+    
