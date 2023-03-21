@@ -3,11 +3,17 @@
 <script>
     function ubahdata(){
         document.getElementById("paragraf1").innerHTML = "data baru"
+        alert("data telah diubah");
+    }
+    function getdataparagraf1(){
+        var data = document.getElementById("paragraf1").innerHTML;
+        alert(data);
     }
 </script>
     </head>
     <body>
-        <p>ini latihan </p>
+        <p id="paragraf1"> pengubahan data </p>
         <button type="button" onclick="ubahdata()">ubah data </button>
+        <button type="button" onclick="getdataparagraf1()">cek data </button>
     </body>
 </html>
