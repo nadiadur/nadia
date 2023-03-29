@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+   
+    <title>investai</title>
+    <style type="text/css">
+        body{
+            background-color: #aaa;
+        }
+        .box{
+            max-width: 450px;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 100px auto;
+            background-color: white;
+        }
+        .input{
+            width: 100px;
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        .btn{
+            width: 100px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            background-color: salmon;
+            color: 10px;
+            padding: 10px;
+        }
+        .btn:hover{
+            background-color: green;
+
+        }
+    </style>
+     </head>
+        <body>
+            <div class="box">
+                <label>Total Investasi</label>
+                <input type="text" id="tot" class="input">
+                <label>Bunga(presentasi)</label>
+                <input type="text" id="bunga" class="input">
+                <label>Bulan/tahun</label>
+                <select class="input">
+                    <option>bulan</option>
+                    <option>tahun</option>
+                </select>
+                <label>Durasi</label>
+                <input type="text" id="durasi" class="input">
+                <button class="btn" onclick="a()">HASIL</button>
+                <label id="hasil">...</label>
+
+            </div>
+       <script type="text/javascrit">
+        function a() {
+        var tot=parseInt(document.getElemtById('tot').value);
+            var bunga=parseInt(document.getElemtById('bunga').value);
+            var durasi=parseInt(document.getElemtById('durasi').value);
+            var persen=(tot*bunga/100);
+            var hasil=tot+persen*durasi;
+            document.getElementById('hasil').innerHtml=hasil;
+           
+        }
+       </script>
+            
+     
+       
+     </body>
+</html>
