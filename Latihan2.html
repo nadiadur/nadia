@@ -3,7 +3,7 @@
     <head>
 
    
-    <title>investai</title>
+    <title>Perhitungan Zakat</title>
     <style type="text/css">
         body{
             background-color: #aaa;
@@ -39,17 +39,15 @@
      </head>
         <body>
             <div class="box">
-                <label>Total Investasi</label>
+                <label>Total panen</label>
                 <input type="text" id="tot" class="input">
-                <label>Bunga(presentasi)</label>
-                <input type="text" id="bunga" class="input">
-                <label>Bulan/tahun</label>
+          
+                <label>jenis</label>
                 <select class="input">
-                    <option>bulan</option>
-                    <option>tahun</option>
+                    <option>5%</option>
+                    <option>10%</option>
                 </select>
-                <label>Durasi</label>
-                <input type="text" id="durasi" class="input">
+                <br>
                 <button class="btn" onclick="a()">HASIL</button>
                 <label id="hasil">...</label>
 
@@ -57,10 +55,8 @@
        <script type="text/javascrit">
         function a() {
         var tot=parseInt(document.getElemtById('tot').value);
-            var bunga=parseInt(document.getElemtById('bunga').value);
-            var durasi=parseInt(document.getElemtById('durasi').value);
-            var persen=(tot*bunga/100);
-            var hasil=tot+persen*durasi;
+            var persen=parseInt(document.getElemtById('persen').value);
+            var hasil=tot*persen;
             document.getElementById('hasil').innerHtml=hasil;
            
         }
