@@ -1,6 +1,6 @@
 
         function hasil(){
-            var Harta=parseInt(document.getElementById('harta').value);
+            var Harta=parseInt(document.getElementById("harta").value);
             
             document.getElementById("harta").innerHTML=total;
             var persen=0.025;
