@@ -1,17 +1,17 @@
 function hasil(){
     var harga=parseInt(document.getElementById('harga').value);
-    var jumlah=parseInt(document.getElementById('harga').value);
+    var jumlah=parseInt(document.getElementById("jumlah").value);
     var total=harga*jumlah;
     document.getElementById("total").innerHTML=total;
-    var diskon=0.10;
+    var dis=0.10;
     var bayar;
     if(total>100000){
-        bayar=total-(total*diskon);
+        bayar=total-(total*dis);
         document.getElementById("bayar").innerHTML=bayar;
-        document.getElementById("diskon").innerHtml="10%";
+        document.getElementById("dis").innerHTML="10%";
     }else{
         document.getElementById("bayar").innerHTML=total;
-        document.getElementById("diskon").innerHtml="0%";
+        document.getElementById("dis").innerHTML="0%";
     }
 
 }
