@@ -1,8 +1,8 @@
 
         function hasil(){
-            var total=parseInt(document.getElementById('tot').value);
+            var Harta=parseInt(document.getElementById('harta').value);
             
-            document.getElementById("total").innerHTML=total;
+            document.getElementById("harta").innerHTML=total;
             var persen=0.025;
             var bayar;
             if(total>0){
