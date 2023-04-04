@@ -39,32 +39,20 @@
      </head>
         <body>
             <div class="box">
-                <label>Total panen</label>
+                <label>Total </label>
                 <input type="text" id="tot" class="input">
           
-                <label>jenis</label>
-                <select class="input">
-                    <option>5%</option>
-                    <option>10%</option>
-                </select>
+                
                 <br>
+    <label>Total</label>
+    <textarea id="total"></textarea><br>
+    <label>Persen</label>
+    <textarea id="persen"></textarea><br>
                 <button class="btn" onclick="a()">HASIL</button>
                 <label id="hasil">...</label>
 
             </div>
 
-       <script type="text/javascrit">
-        
-        function a() {
-        var tot=parseInt(document.getElemtById('tot').value);
-            var persen=parseInt(document.getElemtById('persen').value);
-            var hasil=tot*persen;
-            document.getElementById('hasil').innerHtml=hasil;
-           
-        }
-       </script>
-            
-     
-       
+            <script type="text/javascript" src="penjualan.js"></script>
      </body>
 </html>
