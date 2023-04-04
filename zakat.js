@@ -1,8 +1,7 @@
 
         function hasil(){
             var total=parseInt(document.getElementById('tot').value);
-            var persen=parseInt(document.getElementById("persen").value);
-            var total=tot*persen;
+            
             document.getElementById("total").innerHTML=total;
             var persen=0.025;
             var bayar;
