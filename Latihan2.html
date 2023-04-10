@@ -8,46 +8,55 @@
         body{
             background-color: #aaa;
         }
-        .box{
-            max-width: 450px;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 100px auto;
-            background-color: burlywood;
-        }
-        .input{
-            width: 100px;
-            box-sizing: border-box;
-            padding: 10px;
-            margin: 20px 0;
-        }
-        .btn{
-            width: 100px;
-            box-sizing: border-box;
-            border-radius: 10px;
-            outline: none;
-            border: none;
-            background-color: salmon;
-            color: 10px;
-            padding: 10px;
-        }
+        button {
+      padding: 5px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
         
     </style>
      </head>
         <body>
-            <div class="box">
-        <label>Harta</label>
-        <input type="text" id="harta">
-        <hr><br>
-    <label>Persen</label>
-    <textarea id="persen"></textarea><br>
-    <label>Bayar</label>
-    <textarea id="bayar"></textarea><br>
-    <hr><br>
-    <button onclick="hasil()">proses</button>
-    <button>hapus</button>
-            </div>
+  <h1>Perhitungan Zakat Mal</h1>
+  <form>
+    <label>Jumlah Uang (Rp):</label>
+    <input type="number" id="jumlah-uang" min="1" required><br>
+    <label>Jenis Zakat:</label>
+    <select id="jenis-zakat" required>
+      <option value="1">Zakat Penghasilan (2,5%)</option>
+      <option value="2">Zakat Perdagangan (2,5%)</option>
+      
+    </select><br>
+    <button type="button" onclick="hitungZakatMal()">Hitung Zakat</button>
+  </form>
 
-            <script type="text/javascript" src="zakat.js"></script>
-     </body>
+  <div id="hasil-perhitungan"></div>
+
+  <script>
+    function hitungZakatMal() {
+      // Ambil nilai input dari form
+      let jumlahUang = document.getElementById('jumlah-uang').value;
+      let jenisZakat = document.getElementById('jenis-zakat').value;
+
+      // Hitung jumlah zakat yang harus dikeluarkan berdasarkan jenis zakat yang dipilih
+      let jumlahZakat = 0;
+      switch(jenisZakat) {
+        case '1':
+          jumlahZakat = jumlahUang * 0.025;
+          break;
+        case '2':
+          jumlahZakat = jumlahUang * 0.025;
+          break;
+        
+      }
+
+      // Tampilkan hasil perhitungan
+      let hasilPerhitungan = `Jumlah zakat yang harus dikeluarkan: Rp. ${jumlahZakat.toLocaleString()}`;
+      document.getElementById('hasil-perhitungan').innerHTML = hasilPerhitungan;
+    }
+  </script>
+</body>
 </html>
