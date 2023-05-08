@@ -22,19 +22,19 @@
                 <div class="textBox">
                     <h2>It's not just coffee<br>It's <spam>Starbucks</spam></h2>
                     <p>We are passionate purveyors of coffee and everything else
-                     that goes with a rewarding coffeehouse experience. We also offer a selection of premium Tazo® teas, fine pastries and other delectable treats to please the taste buds.
+                     that goes with a rewarding coffeehouse experience. We also offer a selection of premium Tazo teas, fine pastries and other delectable treats to please the taste buds.
                      And the music you hear in store is chosen for its artistry and appeal. People come to Starbucks to chat, meet up or work.</p>
                      <a href="#">Learn More</a>
                 </div>
             
             <div class="imgBox">
-            <img src="img1.png" class="Starbucks">
+            <img src="img1.png" class="starbucks">
         </div>
     </div>
     <ul class="thumb">
-        <li><img src="thumb1.png"></li>
-        <li><img src="thumb2.png"></li>
-        <li><img src="thumb3.png"></li>
+        <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCirleColor('#017143')"></li>
+        <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCirleColor('#eb7496')"></li>
+        <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCirleColor('#')"></li>
     </ul>
     <ul class="sci">
         <li><a href="#"><img src="facebook.png"></a></li>
@@ -42,6 +42,15 @@
         <li><a href="#"><img src="instagram.png"></a></li>
     </ul>
        </section>
-        
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.starbucks').scr = anything;
+            }
+            function changeCirleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background =color
+            }
+        </script>
+
     </body> 
 </html>
