@@ -71,3 +71,13 @@ navbar{
     transition: o.5s;
     color: white;
 }
+.about img{
+    box-shadow: 6px 4px 41px -24px rgba(0,0,0,0.75);
+-webkit-box-shadow: 6px 4px 41px -24px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 4px 41px -24px rgba(0,0,0,0.75);
+
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
