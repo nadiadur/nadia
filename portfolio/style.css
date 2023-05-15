@@ -126,7 +126,7 @@ box-shadow: inset 23px 40px 97px -159px rgba(0,0,0,0.75);
         width: 0;
     }
     100%{
-        width: 98%;
+        width: 67%;
     }
 }
 @keyframes load3{
@@ -134,7 +134,7 @@ box-shadow: inset 23px 40px 97px -159px rgba(0,0,0,0.75);
         width: 0;
     }
     100%{
-        width: 65%;
+        width: 30%;
     }
 }
 @keyframes load4{
@@ -142,7 +142,7 @@ box-shadow: inset 23px 40px 97px -159px rgba(0,0,0,0.75);
         width: 0;
     }
     100%{
-        width: 85%;
+        width: 3%;
     }
 }
 .btn1{
@@ -171,5 +171,31 @@ box-shadow: inset 23px 40px 97px -159px rgba(0,0,0,0.75);
     background-color: black;
     color: white;
     border: none;
+    transition: 0.5s;
+}
+.card{
+    border: none;
+    outline: none;
+    box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+-webkit-box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+-moz-box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+}
+.card p{
+    color: gray;
+}
+.circel{
+    height: 70px;
+    width: 70px;
+    background-color: lightgray;
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.card:hover .circel{
+    background-color: black;
+    color: white;
     transition: 0.5s;
 }
