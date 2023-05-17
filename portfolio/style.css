@@ -249,3 +249,23 @@ transition: 0.5s;
     opacity: 1;
     transition: 0.3s;
 }
+.circel:hover{
+    background-color: black;
+    transition: 0,4s;
+    color: white;
+}
+.contact .btn3{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 4px;
+}
+.btn3:hover{
+    background: white;
+    color: black;
+    transition: 0.4s;
+    border: 1px solid black;
+}
