@@ -71,6 +71,27 @@ navbar{
     transition: o.5s;
     color: white;
 }
+.sci
+{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sci li
+{
+    list-style: none;
+}
+.sci li a
+{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
 .about img{
     box-shadow: 6px 4px 41px -24px rgba(0,0,0,0.75);
 -webkit-box-shadow: 6px 4px 41px -24px rgba(0,0,0,0.75);
@@ -126,7 +147,7 @@ box-shadow: inset 23px 40px 97px -159px rgba(0,0,0,0.75);
         width: 0;
     }
     100%{
-        width: 67%;
+        width: 75%;
     }
 }
 @keyframes load3{
@@ -134,7 +155,7 @@ box-shadow: inset 23px 40px 97px -159px rgba(0,0,0,0.75);
         width: 0;
     }
     100%{
-        width: 30%;
+        width: 23%;
     }
 }
 @keyframes load4{
@@ -142,7 +163,7 @@ box-shadow: inset 23px 40px 97px -159px rgba(0,0,0,0.75);
         width: 0;
     }
     100%{
-        width: 3%;
+        width: 20%;
     }
 }
 .btn1{
