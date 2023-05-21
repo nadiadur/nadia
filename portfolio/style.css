@@ -17,13 +17,12 @@ navbar{
     color: white;
     background-color: black;
 }
-.navbar-brand{
-    font-size: 1.25rem;
-    font-weight: 800;
-    color: black;
-    cursor: pointer;
-    text-decoration: none;
-}
+.logo
+    {
+        position: relative;
+        max-width: 50px;
+        
+    }
 .main{
     background: url(foto1.png)no-repeat;
     background-size: cover;
@@ -290,3 +289,5 @@ transition: 0.5s;
     transition: 0.4s;
     border: 1px solid black;
 }
+
+
